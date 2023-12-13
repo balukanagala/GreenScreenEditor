@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenImageEditor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+<body>
+    <h1>GreenImageEditor</h1>
+    <div class="main">
+        <label for="greenInput" id="input1" >Choose a image which has a green background : </label>
+        <input type="file" accept="image/*" multiple="false/" id="greenInput" name="greenInput" onchange="upload(1)">
+        <label for="backgroundInput" id="input2">Choose a background image : </label>
+        <input type="file" accept="image/*" multiple="false/" id="backgroundInput" name="backgroundInput" onchange="upload(2)">
+        <canvas class="input" id="canvas1"></canvas>
+        <canvas class="input" id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <button onclick="greenFilter()">Unleash the magic</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
